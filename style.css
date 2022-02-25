@@ -1,0 +1,170 @@
+html {
+  background-color: #1D2333;
+}
+
+span {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+}
+
+.Labels {
+  color: white;
+  font-size: calc(2vw + 2vh);
+}
+
+.itemCasing {
+  width: 80vw;
+  height:10vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: calc(0.5vmin + 0.5vmax);
+  border-radius: calc(0.5vh + 0.5vw);
+  background-color: rgb(39, 48, 71);
+  line-height: 10vh;
+  transition: background-color 0.2s;
+  position: relative;
+}
+
+.itemCasing:hover {
+  background-color: rgb(57, 70, 104);
+  cursor: pointer;
+}
+
+.itemDate {
+  font-size: calc(1.5vw + 1.5vh);
+  position: relative;
+  left: 0px;
+  color: white;
+  pointer-events: none;
+}
+
+.itemName {
+  font-size: calc(1.5vw + 1.5vh);
+  color: white;
+  position: relative;
+  left: 20vw;
+  vertical-align: center;
+  pointer-events: none;
+}
+
+.itemDone {
+  width: 5vmin;
+  height: 5vmin;
+  position: absolute;
+  top: calc(5vh - 3vmin);
+  left: 75vw;
+}
+
+.itemDone:hover {
+  cursor: pointer;
+}
+
+.addOne {
+  margin-left: 3vw;
+  border: 0.5vmin lightskyblue solid;
+  border-radius: 50%;
+  width: calc(3vw + 3vh);
+  height: calc(3vw + 3vh);
+  font-size: calc(2vw + 2vh);
+  color: lightblue;
+  background-color: transparent;
+  transition: background-color 0.2s;
+  margin: 3vh;
+}
+
+.addOne:hover {
+  cursor: pointer;
+  background-color: rgb(57, 70, 104);
+}
+
+.overlay {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 100;
+}
+
+.Window {
+  position: absolute;
+  width: 40vw;
+  height: 40vh;
+  left: 30vw;
+  top: 30vh;
+  background: #1D2333;
+  z-index: 1000;
+}
+
+label {
+  font-size: calc(2vw + 2vh);
+  color: white;
+}
+
+label:hover {
+  cursor: text;
+}
+
+input[type=text]:focus {
+  outline: none;
+  background-color: rgb(57, 70, 104);
+}
+
+input[type=text], input[type=date] {
+  background-color: rgb(39, 48, 71);
+  color: white;
+  border: none;
+  transition: background-color 0.2s;
+  height: calc(1.6vw + 1.6vh);
+  width: 20vw;
+  font-size: calc(1.5vw + 1.5vh);
+}
+
+.windowRoot {
+  display: none;
+}
+
+.confirm {
+    background-color: #5865F2;
+    color: #fff;
+    font-size: calc(0.7vw + 0.7vh);
+    transition: background-color 0.2s;
+    border-radius: 4px;
+    width: 6vw;
+    height: 6vh;
+    border: none;
+    position: absolute;
+    left: 4vw;
+    top: 30vh;
+}
+
+.confirm:hover {
+  background-color: #4752C4;
+  cursor: pointer;
+}
+
+.cancel {
+  position: absolute;
+  top: 30vh;
+  left: 30vw;
+  width: 6vw;
+  height: 6vh;
+  border: none;
+  color: #fff;
+  background-color: #4f545c;
+  font-size: calc(0.7vw + 0.7vh);
+  transition: background-color 0.2s;
+  border-radius: 4px;
+}
+
+.cancel:hover {
+  cursor: pointer;
+  background-color: #5d6269;
+}
